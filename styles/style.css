@@ -30,6 +30,7 @@ p {
 .header {
   background-color: var(--tertiary-color);
   padding: 50px 180px;
+ 
 }
 /*Nvigation start*/
 .navigation-bar {
@@ -205,11 +206,12 @@ padding: 10px;
 /* for mobile  */
 @media only screen and (max-width: 576px) {
   .header,
+  .group-of-architects div,
   .features-section,
   .love-and-enjoy,
   .some-factsr,
   .sponspors {
-    padding: 5px 15px;
+    padding: 5px 25px;
     text-align: center;
   }
   .navigation-bar,
