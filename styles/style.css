@@ -1,12 +1,87 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #FF900E;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
 }
 /*-------------Variable-------------*/
-:root{
-    --primary-color: #FF900E;
-    --secondary-color: #727272;
-    --tertiary-color:#FFF4E7;
+:root {
+  --primary-color: #ff900e;
+  --secondary-color: #727272;
+  --tertiary-color: #fff4e7;
+}
+/* for button  */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 15px;
+  padding: 20px 24px;
+}
+/*----------------
+              Header section start
+                           ----------------------*/
+.header {
+  background-color: var(--tertiary-color);
+  padding: 50px 220px;
+}
+/*Nvigation start*/
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+}
+.navigation-bar ul {
+  display: flex;
+  list-style: none;
+}
+.navigation-bar ul a {
+  text-decoration: none;
+  margin-left: 30px;
+  color: #000;
+  font-size: 1.2rem;
+}
+/*Navigation end*/
+
+.group-of-architects {
+  text-align: center;
+}
+.group-of-architects div {
+  padding: 80px 150px 35px;
+}
+.group-of-architects h1 {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.group-of-architects p {
+  color: var(--secondary-color);
+  margin-top: 18px;
+}
+.header-image {
+  width: 100%;
+  margin-top: 50px;
+}
+/*--------------------------
+                   media queary
+                  ------------------------------*/
+/* for mobile  */
+@media only screen and (max-width: 576px) {
+ .header ,
+ .group-of-architects div{
+    padding: 40px 10px;
+    text-align: center;
+}
+.navigation-bar,
+.navigation-bar ul {
+ flex-direction: column;
+}
+}
+
+/* For Tablet/Mediam Divice  */
+@media only screen and (min-width:577px) and (max-width:992px) {
+     .header ,
+ .group-of-architects div{
+    padding: 40px;
+    text-align: center;
+}
 }
