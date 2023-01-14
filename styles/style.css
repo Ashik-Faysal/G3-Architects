@@ -19,12 +19,17 @@
   border-radius: 15px;
   padding: 20px 24px;
 }
+p {
+  color: var(--secondary-color);
+  margin-top: 18px;
+ margin-bottom: 15px;
+}
 /*----------------
               Header section start
                            ----------------------*/
-.header {
+.header ,.features-section{
   background-color: var(--tertiary-color);
-  padding: 50px 220px;
+  padding: 50px 180px;
 }
 /*Nvigation start*/
 .navigation-bar {
@@ -47,41 +52,80 @@
   text-align: center;
 }
 .group-of-architects div {
-  padding: 80px 150px 35px;
+  padding: 80px 100px 35px;
 }
 .group-of-architects h1 {
   font-size: 4rem;
   font-weight: 700;
-}
-.group-of-architects p {
-  color: var(--secondary-color);
-  margin-top: 18px;
-}
+} 
 .header-image {
   width: 100%;
   margin-top: 50px;
+}
+/*----------------
+              Header section start
+                           ----------------------*/
+
+/*---------------- 
+      features-section 
+              --------------*/
+.features-section {
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+.features-images{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+  align-content: center;
+}
+.features-images img{
+  width: 300px;
+}
+.our-features{
+  padding: 250px 120px;
+}
+.our-features h1{
+  font-size: 2.8rem;
 }
 /*--------------------------
                    media queary
                   ------------------------------*/
 /* for mobile  */
 @media only screen and (max-width: 576px) {
- .header ,
- .group-of-architects div{
-    padding: 40px 10px;
+  .header,
+  .group-of-architects div,
+  .features-section {
+    padding: 20px 10px;
     text-align: center;
+  }
+  .navigation-bar,
+  .navigation-bar ul,
+  .features-section {
+    flex-direction: column;
+  }
+  .features-images{
+  grid-template-columns: repeat(1,1fr);
 }
-.navigation-bar,
-.navigation-bar ul {
- flex-direction: column;
+.features-images img{
+width: 100%;
 }
 }
 
 /* For Tablet/Mediam Divice  */
-@media only screen and (min-width:577px) and (max-width:992px) {
-     .header ,
- .group-of-architects div{
+@media only screen and (min-width: 577px) and (max-width: 992px) {
+  .header,
+  .group-of-architects div,
+  .features-section {
     padding: 40px;
     text-align: center;
+  }
+   .features-section {
+    flex-direction: column;
+  }
+
+.features-images img{
+width: 100%;
 }
 }
