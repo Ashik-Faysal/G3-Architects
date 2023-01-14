@@ -4,9 +4,6 @@
   box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
 }
-body{
-
-}
 /*-------------Variable-------------*/
 :root {
   --primary-color: #ff900e;
@@ -75,7 +72,7 @@ p {
 .features-section {
   display: flex;
   justify-content: space-between;
-padding: 50px 180px;
+  padding: 50px 180px;
 }
 .features-images {
   display: grid;
@@ -105,7 +102,7 @@ padding: 50px 180px;
 .love-and-enjoy {
   display: flex;
   justify-content: space-between;
-padding: 50px 180px;
+  padding: 50px 180px;
 }
 .love-and-enjoy h1 {
   font-size: 2.8rem;
@@ -143,16 +140,21 @@ padding: 50px 180px;
   justify-content: space-around;
   margin-top: 80px;
 }
-.facts-container div {
+.facts-container  div {
   height: 241px;
   width: 241px;
   border: 1px solid var(--primary-color);
   border-radius: 15px;
   text-align: center;
   padding: 50px 0;
- margin: 10px;
+  margin: 10px;
 }
-.facts-container div h6{
+.facts-container div:hover{
+  background-color: #de80dc;
+  transition: 2s;
+  transform: rotate(360deg);
+}
+.facts-container div h6 {
   color: var(--secondary-color);
   margin-top: 10px;
   font-size: 1.2rem;
@@ -162,15 +164,51 @@ padding: 50px 180px;
   width: 55px;
   margin-bottom: 15px;
 }
+/*---------------- 
+               some facts-section end
+              --------------*/
+
+/*---------------- 
+               Sponspors-section start 
+              --------------*/
+.sponspors{
+  padding: 50px 180px;
+  text-align: center;
+  text-align: center;
+ 
+}
+.sponspors h1{
+  font-size: 3rem;
+}
+.sponspors-logo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px; 
+  opacity: 0.5;
+}
+.sponspors-logo img{
+  width: 165.83px;
+height: 50px;
+padding: 10px;
+}
+/*---------------- 
+               Sponspors-section end 
+              --------------*/
+
+              /*---------------- 
+               footer-section start 
+              --------------*/
 /*--------------------------
                    media queary
                   ------------------------------*/
 /* for mobile  */
 @media only screen and (max-width: 576px) {
- .header,
- .features-section,
- .love-and-enjoy ,
- .some-factsr{
+  .header,
+  .features-section,
+  .love-and-enjoy,
+  .some-factsr,
+  .sponspors {
     padding: 5px 15px;
     text-align: center;
   }
@@ -178,7 +216,8 @@ padding: 50px 180px;
   .navigation-bar ul,
   .features-section,
   .love-and-enjoy,
-  .facts-container{
+  .facts-container ,
+  .sponspors-logo{
     flex-direction: column;
   }
   .features-images {
@@ -189,17 +228,17 @@ padding: 50px 180px;
   .love-imgae {
     width: 100%;
   }
-    .facts-container{
-        align-items: center;
-    }
+  .facts-container {
+    align-items: center;
+  }
 }
 
 /* For Tablet/Mediam Divice  */
 @media only screen and (min-width: 577px) and (max-width: 992px) {
   .header,
- .features-section,
- .love-and-enjoy ,
- .some-facts{
+  .features-section,
+  .love-and-enjoy,
+  .some-facts {
     padding: 5px 30px;
     text-align: center;
   }
@@ -207,15 +246,15 @@ padding: 50px 180px;
   .love-and-enjoy {
     flex-direction: column;
   }
-
   .features-images img,
   .love-and-enjoy img,
   .love-imgae {
     width: 100%;
     object-fit: contain;
   }
-  .facts-container{
+  .facts-container ,
+  .sponspors-logo{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
