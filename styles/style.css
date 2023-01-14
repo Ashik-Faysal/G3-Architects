@@ -30,7 +30,6 @@ p {
 .header {
   background-color: var(--tertiary-color);
   padding: 50px 180px;
- 
 }
 /*Nvigation start*/
 .navigation-bar {
@@ -141,7 +140,7 @@ p {
   justify-content: space-around;
   margin-top: 80px;
 }
-.facts-container  div {
+.facts-container div {
   height: 241px;
   width: 241px;
   border: 1px solid var(--primary-color);
@@ -150,7 +149,7 @@ p {
   padding: 50px 0;
   margin: 10px;
 }
-.facts-container div:hover{
+.facts-container div:hover {
   background-color: #de80dc;
   transition: 2s;
   transform: rotate(360deg);
@@ -172,33 +171,44 @@ p {
 /*---------------- 
                Sponspors-section start 
               --------------*/
-.sponspors{
+.sponspors {
   padding: 50px 180px;
   text-align: center;
   text-align: center;
- 
 }
-.sponspors h1{
+.sponspors h1 {
   font-size: 3rem;
 }
-.sponspors-logo{
+.sponspors-logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 35px; 
+  margin-top: 35px;
   opacity: 0.5;
 }
-.sponspors-logo img{
+.sponspors-logo img {
   width: 165.83px;
-height: 50px;
-padding: 10px;
+  height: 50px;
+  padding: 10px;
 }
 /*---------------- 
                Sponspors-section end 
               --------------*/
 
-              /*---------------- 
+/*---------------- 
                footer-section start 
+              --------------*/
+footer {
+  margin: 40px 180px;
+  padding: 40px;
+  text-align: center;
+  background-color: var(--tertiary-color);
+  border-radius: 8px;
+  font-size: 20px;
+  color: #424242;
+}
+/*---------------- 
+               footer-section end
               --------------*/
 /*--------------------------
                    media queary
@@ -218,8 +228,8 @@ padding: 10px;
   .navigation-bar ul,
   .features-section,
   .love-and-enjoy,
-  .facts-container ,
-  .sponspors-logo{
+  .facts-container,
+  .sponspors-logo {
     flex-direction: column;
   }
   .features-images {
@@ -232,6 +242,9 @@ padding: 10px;
   }
   .facts-container {
     align-items: center;
+  }
+  footer{
+    margin: 25px;
   }
 }
 
@@ -254,8 +267,8 @@ padding: 10px;
     width: 100%;
     object-fit: contain;
   }
-  .facts-container ,
-  .sponspors-logo{
+  .facts-container,
+  .sponspors-logo {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
