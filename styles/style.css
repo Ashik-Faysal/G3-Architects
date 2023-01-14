@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
 }
+body{
+
+}
 /*-------------Variable-------------*/
 :root {
   --primary-color: #ff900e;
@@ -72,7 +75,7 @@ p {
 .features-section {
   display: flex;
   justify-content: space-between;
-  padding: 50px 180px;
+padding: 50px 180px;
 }
 .features-images {
   display: grid;
@@ -97,12 +100,12 @@ p {
       love & enjoy-section start 
               --------------*/
 .love {
-  position: absolute; /*for button positioning*/
+  position: relative; /* for button positioning */
 }
 .love-and-enjoy {
   display: flex;
   justify-content: space-between;
-  padding: 50px 180px;
+padding: 50px 180px;
 }
 .love-and-enjoy h1 {
   font-size: 2.8rem;
@@ -129,22 +132,53 @@ p {
 /*---------------- 
       love & enjoy-section end
               --------------*/
+/*---------------- 
+               some facts-section start 
+              --------------*/
+.some-facts {
+  padding: 50px 180px;
+}
+.facts-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+.facts-container div {
+  height: 241px;
+  width: 241px;
+  border: 1px solid var(--primary-color);
+  border-radius: 15px;
+  text-align: center;
+  padding: 50px 0;
+ margin: 10px;
+}
+.facts-container div h6{
+  color: var(--secondary-color);
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+.facts-container div img {
+  height: 55px;
+  width: 55px;
+  margin-bottom: 15px;
+}
 /*--------------------------
                    media queary
                   ------------------------------*/
 /* for mobile  */
 @media only screen and (max-width: 576px) {
-  .header,
-  .group-of-architects div,
-  .features-section,
-  .love-and-enjoy {
-    padding: 20px 5px;
+ .header,
+ .features-section,
+ .love-and-enjoy ,
+ .some-factsr{
+    padding: 5px 15px;
     text-align: center;
   }
   .navigation-bar,
   .navigation-bar ul,
   .features-section,
-  .love-and-enjoy {
+  .love-and-enjoy,
+  .facts-container{
     flex-direction: column;
   }
   .features-images {
@@ -155,15 +189,18 @@ p {
   .love-imgae {
     width: 100%;
   }
+    .facts-container{
+        align-items: center;
+    }
 }
 
 /* For Tablet/Mediam Divice  */
 @media only screen and (min-width: 577px) and (max-width: 992px) {
   .header,
-  .group-of-architects div,
-  .features-section,
-  .love-and-enjoy {
-    padding: 0 40px;
+ .features-section,
+ .love-and-enjoy ,
+ .some-facts{
+    padding: 5px 30px;
     text-align: center;
   }
   .features-section,
@@ -176,5 +213,9 @@ p {
   .love-imgae {
     width: 100%;
     object-fit: contain;
+  }
+  .facts-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
   }
 }
