@@ -22,12 +22,12 @@
 p {
   color: var(--secondary-color);
   margin-top: 18px;
- margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 /*----------------
               Header section start
                            ----------------------*/
-.header ,.features-section{
+.header{
   background-color: var(--tertiary-color);
   padding: 50px 180px;
 }
@@ -57,38 +57,78 @@ p {
 .group-of-architects h1 {
   font-size: 4rem;
   font-weight: 700;
-} 
+}
 .header-image {
   width: 100%;
   margin-top: 50px;
 }
 /*----------------
-              Header section start
+              Header section end
                            ----------------------*/
 
 /*---------------- 
-      features-section 
+      features-section start 
               --------------*/
 .features-section {
   display: flex;
   justify-content: space-between;
-  flex-shrink: 0;
+  padding: 50px 180px;
 }
-.features-images{
+.features-images {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   align-content: center;
 }
-.features-images img{
+.features-images img {
   width: 300px;
 }
-.our-features{
+.our-features {
   padding: 250px 120px;
 }
-.our-features h1{
+.our-features h1 {
   font-size: 2.8rem;
 }
+/*---------------- 
+      features-section end
+              --------------*/
+
+/*---------------- 
+      love & enjoy-section start 
+              --------------*/
+              .love{
+                position: absolute;
+              }
+.love-and-enjoy {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 180px;
+}
+.love-and-enjoy h1{
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.love-and-enjoy img{
+  width: 100%;
+height: 80vh;
+}
+.about-love{
+    background-color: var(--tertiary-color);
+  }
+  .about-love > div{
+    background-color: #FFF;
+  }
+  .love-imgae{
+    width: 800px;
+  }
+  .btn{
+    position: absolute;
+    right: 30%;
+    bottom: 40px;
+  }
+  /*---------------- 
+      love & enjoy-section end
+              --------------*/
 /*--------------------------
                    media queary
                   ------------------------------*/
@@ -96,36 +136,45 @@ p {
 @media only screen and (max-width: 576px) {
   .header,
   .group-of-architects div,
-  .features-section {
-    padding: 20px 10px;
+  .features-section,
+  .love-and-enjoy {
+    padding: 20px 5px;
     text-align: center;
   }
   .navigation-bar,
   .navigation-bar ul,
-  .features-section {
+  .features-section,
+  .love-and-enjoy  {
     flex-direction: column;
   }
-  .features-images{
-  grid-template-columns: repeat(1,1fr);
-}
-.features-images img{
-width: 100%;
-}
+  .features-images {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .features-images img ,
+  .love-and-enjoy  img,
+  .love-imgae {
+    width: 100%;
+  }
 }
 
 /* For Tablet/Mediam Divice  */
 @media only screen and (min-width: 577px) and (max-width: 992px) {
   .header,
   .group-of-architects div,
-  .features-section {
-    padding: 40px;
+  .features-section,
+  .love-and-enjoy  {
+    padding: 0 40px;
     text-align: center;
   }
-   .features-section {
+  .features-section,
+  .love-and-enjoy  {
     flex-direction: column;
   }
 
-.features-images img{
-width: 100%;
-}
+  .features-images img,
+   .love-and-enjoy img,
+   .love-imgae {
+    width: 100%;
+    object-fit: contain;
+  }
 }
