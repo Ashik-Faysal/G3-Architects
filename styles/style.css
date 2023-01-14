@@ -27,7 +27,7 @@ p {
 /*----------------
               Header section start
                            ----------------------*/
-.header{
+.header {
   background-color: var(--tertiary-color);
   padding: 50px 180px;
 }
@@ -96,37 +96,37 @@ p {
 /*---------------- 
       love & enjoy-section start 
               --------------*/
-              .love{
-                position: absolute;
-              }
+.love {
+  position: absolute; /*for button positioning*/
+}
 .love-and-enjoy {
   display: flex;
   justify-content: space-between;
   padding: 50px 180px;
 }
-.love-and-enjoy h1{
+.love-and-enjoy h1 {
   font-size: 2.8rem;
   font-weight: 700;
 }
-.love-and-enjoy img{
+.love-and-enjoy img {
   width: 100%;
-height: 80vh;
+  height: 80vh;
 }
-.about-love{
-    background-color: var(--tertiary-color);
-  }
-  .about-love > div{
-    background-color: #FFF;
-  }
-  .love-imgae{
-    width: 800px;
-  }
-  .btn{
-    position: absolute;
-    right: 30%;
-    bottom: 40px;
-  }
-  /*---------------- 
+.about-love {
+  background-color: var(--tertiary-color);
+}
+.about-love > div {
+  background-color: #fff;
+}
+.love-imgae {
+  width: 800px;
+}
+.btn {
+  position: absolute;
+  right: 30%;
+  bottom: 40px;
+}
+/*---------------- 
       love & enjoy-section end
               --------------*/
 /*--------------------------
@@ -144,14 +144,14 @@ height: 80vh;
   .navigation-bar,
   .navigation-bar ul,
   .features-section,
-  .love-and-enjoy  {
+  .love-and-enjoy {
     flex-direction: column;
   }
   .features-images {
     grid-template-columns: repeat(1, 1fr);
   }
-  .features-images img ,
-  .love-and-enjoy  img,
+  .features-images img,
+  .love-and-enjoy img,
   .love-imgae {
     width: 100%;
   }
@@ -162,18 +162,18 @@ height: 80vh;
   .header,
   .group-of-architects div,
   .features-section,
-  .love-and-enjoy  {
+  .love-and-enjoy {
     padding: 0 40px;
     text-align: center;
   }
   .features-section,
-  .love-and-enjoy  {
+  .love-and-enjoy {
     flex-direction: column;
   }
 
   .features-images img,
-   .love-and-enjoy img,
-   .love-imgae {
+  .love-and-enjoy img,
+  .love-imgae {
     width: 100%;
     object-fit: contain;
   }
