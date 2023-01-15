@@ -104,6 +104,7 @@ p {
   display: flex;
   justify-content: space-between;
   padding: 50px 180px;
+  gap: 40px;
 }
 .love-and-enjoy h1 {
   font-size: 2.8rem;
@@ -112,8 +113,10 @@ p {
   /* height: 100px; */
 }
 .love-and-enjoy img {
-  width: 100%;
-  height: 80vh;
+  /* width: 100%; */
+  width: 40vw;
+  height: 100vh;
+  object-fit: contain;
 }
 .about-love {
   background-color: var(--tertiary-color);
@@ -198,21 +201,7 @@ p {
                Sponspors-section end 
               --------------*/
 
-/*---------------- 
-               footer-section start 
-              --------------*/
-footer {
-  margin: 40px 180px;
-  padding: 40px;
-  text-align: center;
-  background-color: var(--tertiary-color);
-  border-radius: 8px;
-  font-size: 20px;
-  color: #424242;
-}
-/*---------------- 
-               footer-section end
-              --------------*/
+
 /*=============
                           -- My grid section start  --
                                          ===========*/
@@ -246,7 +235,10 @@ footer {
   height: 350px;
   font-size: 3rem;
   color: #fff;
-  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .grid-section {
   display: grid;
@@ -256,12 +248,12 @@ footer {
   "mc ma ma ma";
   padding: 50px 180px;
   gap: 20px;
-  background-color: #393b47;
 }
 .grid-item {
   gap: 20;
   text-align: center;
   box-shadow: 5px 5px 5px var(--secondary-color);
+  border: 1px solid var(--tertiary-color);
   border-radius: 15px;
   width: 100%;
 }
@@ -269,6 +261,25 @@ footer {
   width: 100%;
   height: 256px;
 }
+/*=============
+                          -- My grid section end --
+                                         ===========*/
+
+/*---------------- 
+               footer-section start 
+              --------------*/
+footer {
+  margin: 40px 180px;
+  padding: 40px;
+  text-align: center;
+  background-color: var(--tertiary-color);
+  border-radius: 8px;
+  font-size: 20px;
+  color: #424242;
+}
+/*---------------- 
+               footer-section end
+              --------------*/
 /*--------------------------
                    media queary
                   ------------------------------*/
@@ -326,8 +337,8 @@ footer {
   "at"
   "ac"
   "ma";
-  padding: 5px 15px;
-  
+  padding: 15px 25px;
+  margin: 20px 10px;
 }
   footer {
     margin: 25px;
@@ -366,4 +377,14 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  .grid-section {
+  grid-template-areas: 
+  "hw hw"
+  "cm mc"
+  "wc mc"
+  "at ac"
+  "ma ma";
+  padding: 5px 30px;
+  margin-top: 30px;
+}
 }
