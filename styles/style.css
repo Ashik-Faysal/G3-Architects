@@ -107,6 +107,8 @@ p {
 .love-and-enjoy h1 {
   font-size: 2.8rem;
   font-weight: 700;
+  border-left: 6px solid var(--primary-color);
+  /* height: 100px; */
 }
 .love-and-enjoy img {
   width: 100%;
@@ -216,12 +218,13 @@ footer {
 /* for mobile  */
 @media only screen and (max-width: 576px) {
   .header,
-  .group-of-architects div,
+.our-features,
   .features-section,
+  .group-of-architects div,
   .love-and-enjoy,
-  .some-factsr,
+  .some-facts,
   .sponspors {
-    padding: 5px 25px;
+    padding: 5px 15px;
     text-align: center;
   }
   .navigation-bar,
@@ -253,7 +256,8 @@ footer {
   .header,
   .features-section,
   .love-and-enjoy,
-  .some-facts {
+  .some-facts,
+.our-features {
     padding: 5px 30px;
     text-align: center;
   }
