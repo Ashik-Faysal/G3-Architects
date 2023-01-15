@@ -10,7 +10,7 @@
   --secondary-color: #727272;
   --tertiary-color: #fff4e7;
 }
-/* for button  */
+/* for primary button  */
 .btn-primary {
   background-color: var(--primary-color);
   color: #fff;
@@ -19,6 +19,7 @@
   border-radius: 15px;
   padding: 20px 24px;
 }
+/* For all paragraph tag  */
 p {
   color: var(--secondary-color);
   margin-top: 18px;
@@ -55,7 +56,7 @@ p {
   padding: 80px 100px 35px;
 }
 .group-of-architects h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 700;
 }
 .header-image {
@@ -242,7 +243,21 @@ footer {
   .love-and-enjoy img,
   .love-imgae {
     width: 100%;
+    object-fit: contain;
   }
+  .btn {
+    position: relative;
+    bottom: -55px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.group-of-architects h1 {
+  font-size: 2.5rem;
+}
   .facts-container {
     align-items: center;
   }
@@ -265,6 +280,13 @@ footer {
   .love-and-enjoy {
     flex-direction: column;
   }
+  .btn {
+    position: relative;
+    bottom: -45px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
   .features-images img,
   .love-and-enjoy img,
   .love-imgae {
