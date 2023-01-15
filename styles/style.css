@@ -213,13 +213,69 @@ footer {
 /*---------------- 
                footer-section end
               --------------*/
+/*=============
+                          -- My grid section start  --
+                                         ===========*/
+.hand-wash{
+  grid-area: hw;
+  background-color: #ffe4c4;
+}
+.cover-mouth{
+  grid-area: cm;
+  background-color: #5f9ea0;
+}
+.avoid-travel{
+  grid-area: at;
+  background-color: #f08080;
+}
+.medical-care{
+  grid-area: mc;
+  background-color: #8fed8f;
+}
+.well-cooked{
+  grid-area: wc;
+  background-color: #a0a0c8;
+}
+.avoid-contact{
+  grid-area: ac;
+  background-color: #d8bfd8;
+}
+.masonry{
+  grid-area: ma;
+  background-color: #800000;
+  height: 350px;
+  font-size: 3rem;
+  color: #fff;
+  align-content: center;
+}
+.grid-section {
+  display: grid;
+  grid-template-areas: 
+  "hw hw cm at"
+  "mc wc cm ac"
+  "mc ma ma ma";
+  padding: 50px 180px;
+  gap: 20px;
+  background-color: #393b47;
+}
+.grid-item {
+  gap: 20;
+  text-align: center;
+  box-shadow: 5px 5px 5px var(--secondary-color);
+  border-radius: 15px;
+  width: 100%;
+}
+.grid-item img {
+  width: 100%;
+  height: 256px;
+}
 /*--------------------------
                    media queary
                   ------------------------------*/
 /* for mobile  */
 @media only screen and (max-width: 576px) {
   .header,
-.our-features,
+  .our-features,
   .features-section,
   .group-of-architects div,
   .love-and-enjoy,
@@ -254,14 +310,26 @@ footer {
     font-size: 1rem;
     padding: 10px;
     margin-bottom: 30px;
-}
-.group-of-architects h1 {
-  font-size: 2.5rem;
-}
+  }
+  .group-of-architects h1 {
+    font-size: 2.5rem;
+  }
   .facts-container {
     align-items: center;
   }
-  footer{
+  .grid-section {
+  grid-template-areas: 
+  "hw"
+  "cm"
+  "wc"
+  "mc"
+  "at"
+  "ac"
+  "ma";
+  padding: 5px 15px;
+  
+}
+  footer {
     margin: 25px;
   }
 }
@@ -272,7 +340,7 @@ footer {
   .features-section,
   .love-and-enjoy,
   .some-facts,
-.our-features {
+  .our-features {
     padding: 5px 30px;
     text-align: center;
   }
@@ -286,7 +354,7 @@ footer {
     left: 50%;
     right: 50%;
     transform: translate(-50%, -50%);
-}
+  }
   .features-images img,
   .love-and-enjoy img,
   .love-imgae {
